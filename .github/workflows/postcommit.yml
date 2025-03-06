@@ -18,5 +18,7 @@ jobs:
    runs-on: ubuntu-24.04
    steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: true
     - name: Run ya make
       run: ./third_party/yatool/ya make ./third_party/yatool --gc -r --musl
