@@ -1,3 +1,6 @@
 [submodule "third_party/yatool"]
 	path = third_party/yatool
 	url = https://github.com/yandex/yatool.git
+[submodule "third_party/perforator"]
+	path = third_party/perforator
+	url = https://github.com/yandex/perforator.git
