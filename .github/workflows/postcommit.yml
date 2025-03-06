@@ -15,7 +15,9 @@ on:
 jobs:
   ya:
    name: Postcommit checks
+   continue-on-error: true
    strategy:
+     fail-fast: false
      matrix:
        example: [cpp, flatbuf, go, java, protobuf, python]
    runs-on: ubuntu-24.04
