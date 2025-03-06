@@ -30,6 +30,6 @@ jobs:
       if: ${{ matrix.build-from != 'yatool' }}
       run: cp -r ./third_party/yatool/devtools/examples ./third_party/${{ matrix.build-from }}/devtools
     - name: Make examples
-      run: ./third_party/${{ matrix.build-from }}/ya make ./third_party/${{ matrix.build-from }}/devtools/examples/tutorials/${{ matrix.example }}
+      run: ./third_party/${{ matrix.build-from }}/ya make ./third_party/${{ matrix.build-from }}/devtools/examples/tutorials/${{ matrix.example }} -k
     - name: Test exanmples
-      run: ./third_party/${{ matrix.build-from }}/ya test ./third_party/${{ matrix.build-from }}/devtools/examples/tutorials/${{ matrix.example }}
+      run: ./third_party/${{ matrix.build-from }}/ya test ./third_party/${{ matrix.build-from }}/devtools/examples/tutorials/${{ matrix.example }} -k
