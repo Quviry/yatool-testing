@@ -22,3 +22,7 @@ jobs:
         submodules: true
     - name: Run ya make
       run: ./third_party/yatool/ya make ./third_party/yatool --gc -r --musl
+    - name: Make examples
+      run: ./third_party/yatool/ya make ./third_party/yatool/devtools/examples/tutorials
+    - name: Test exanmples
+      run: ./third_party/yatool/ya test ./third_party/yatool/devtools/examples/tutorials
