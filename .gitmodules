@@ -1,0 +1,3 @@
+[submodule "third_party/yatool"]
+	path = third_party/yatool
+	url = https://github.com/yandex/yatool.git
